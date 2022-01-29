@@ -1,0 +1,28 @@
+ {
+  "manifest_version": 3,
+
+  "name": "Hostify Dark Theme",
+  "version": "0.1.0",
+  "description": "Dark Theme for Hostify administration panel",
+  "author": "kyngs",
+
+  "icons": {
+    "100": "icons/icon100.png"
+  },
+
+  "background": {
+    "service_worker": "js/background_service.js"
+  },
+
+  "content_scripts": [{
+    "js": ["js/injector.js"],
+    "matches": ["https://admin.hostify.cz/*"],
+    "run_at": "document_end"
+  }],
+
+  "web_accessible_resources": [{
+    "resources": ["css/style-override.css"],
+    "matches": ["https://admin.hostify.cz/*"]
+  }]
+
+}

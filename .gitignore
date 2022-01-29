@@ -5,3 +5,6 @@
 #IDE files
 *.iml
 .idea/
+
+#packages
+*.zip
