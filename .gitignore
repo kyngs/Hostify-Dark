@@ -1,3 +1,7 @@
 # Generated chrome files
 *.crx
 *.pem
+
+#IDE files
+*.iml
+.idea/
