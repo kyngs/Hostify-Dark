@@ -57,7 +57,7 @@ body {
     position: relative;
 }
 
-.nav-link.nav-item.active::before {
+.nav-link.nav-item.active::before, .btn-sm.d-flex.flex-column.btn.active::before {
     content: '';
     display: block;
     width: 40px; 
@@ -68,6 +68,14 @@ body {
     transform: translateY(-100%);
     background-image: url("https://cdn.discordapp.com/emojis/615678167763517486.webp?size=96&quality=lossless");
     background-size: 40px 40px;
+}
+
+.btn-sm.d-flex.flex-column.btn.active::before {
+    right: 10px;
+}
+
+.btn-sm.d-flex.flex-column.btn.active.focus {
+    box-shadow: none !important;
 }
 
 body::before {
