@@ -11,9 +11,10 @@ body {
     background-color: #212529;
 }
 
-.bg-light {
+.bg-light, .modal-content, .form-control, .custom-select {
     background-color: #212529 !important;
-}
+    color: #c2c2c2 !important;
+} 
 
 .info-span {
     color: #c2c2c2 !important;
@@ -47,11 +48,53 @@ body {
     background-color: #212529 !important;
 }
 
-.shadow {
-    box-shadow: 0 .5rem 1rem rgba(0, 123, 255,.15)!important;
-}
-
 .table-hover tbody tr:hover {
     background-color: rgba(255,255,255,.100);
     color: #fff;
+}
+
+.nav-link.nav-item.active {
+    position: relative;
+}
+
+.nav-link.nav-item.active::before {
+    content: '';
+    display: block;
+    width: 40px; 
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    transform: translateY(-100%);
+    background-image: url("https://cdn.discordapp.com/emojis/615678167763517486.webp?size=96&quality=lossless");
+    background-size: 40px 40px;
+}
+
+body::before {
+    content: '';
+    display: block;
+    width: 40px; 
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-image: url("https://cdn.discordapp.com/emojis/757704638207098946.gif?size=96&quality=lossless");
+    background-size: 40px 40px;
+    z-index: 999999;
+}
+
+.card-footer > .btn:not([disabled]):hover {
+    position: relative;
+}
+
+.card-footer > .btn:hover:not([disabled])::before {
+    content: '';
+    display: block;
+    width: 20px; 
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-image: url("https://cdn.discordapp.com/emojis/776202375958102016.webp?size=96&quality=lossless");
+    background-size: 20px 20px;
 }
