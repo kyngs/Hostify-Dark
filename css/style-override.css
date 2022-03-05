@@ -111,3 +111,7 @@ body::before {
 button.close {
     color: white !important;
 }
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0, 123, 255,.15)!important;
+}
