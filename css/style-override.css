@@ -66,7 +66,7 @@ body {
     top: 0;
     right: 30px;
     transform: translateY(-100%);
-    background-image: url("https://cdn.discordapp.com/emojis/615678167763517486.webp?size=96&quality=lossless");
+    background-image: url("chrome-extension://__MSG_@@extension_id__/icons/cat2_96.webp");
     background-size: 40px 40px;
 }
 
@@ -86,13 +86,35 @@ body::before {
     position: fixed;
     bottom: 0;
     left: 0;
-    background-image: url("https://cdn.discordapp.com/emojis/757704638207098946.gif?size=96&quality=lossless");
+//    background-image: url("chrome-extension://__MSG_@@extension_id__/icons/cat1_96.gif");
     background-size: 40px 40px;
     z-index: 999999;
 }
 
 .card-footer > .btn:not([disabled]):hover {
     position: relative;
+}
+
+.hover-shadow {
+    transition: .25s;
+//    border: 1px solid #6c757d !important;
+    border: none !important;
+}
+
+.border-box {
+    border: none !important;
+}
+
+.border {
+    border: none !important;
+}
+
+.custom-select {
+    border: 1px solid #c2c2c2 !important;
+}
+
+.border-primary {
+    border: 1px solid #007bff !important;
 }
 
 .card-footer > .btn.mr-1:hover:not([disabled])::before, .card-footer > .btn.btn-danger:hover:not([disabled])::before{
@@ -104,7 +126,7 @@ body::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url("https://cdn.discordapp.com/emojis/776202375958102016.webp?size=96&quality=lossless");
+    background-image: url("chrome-extension://__MSG_@@extension_id__/icons/cat0_96.webp");
     background-size: 20px 20px;
 }
 

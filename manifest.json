@@ -21,7 +21,7 @@
   }],
 
   "web_accessible_resources": [{
-    "resources": ["css/style-override.css"],
+    "resources": ["css/style-override.css", "icons/*"],
     "matches": ["https://admin.hostify.cz/*"]
   }]
 
